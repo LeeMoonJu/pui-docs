@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@skybaer0804/pui": "^1.0.0",
     "@tabler/icons-react": "^3.36.0"
   },
   "devDependencies": {

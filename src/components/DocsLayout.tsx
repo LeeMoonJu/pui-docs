@@ -3,7 +3,7 @@ import { Grid } from '@skybaer0804/pui/Layout';
 import { List, ListItem, ListItemText } from '@skybaer0804/pui/List';
 import { Box } from '@skybaer0804/pui/Layout';
 
-const PUI_VERSION = typeof __PUI_VERSION__ !== 'undefined' ? __PUI_VERSION__ : 'dev';
+const PUI_VERSION = '1.0.0';
 
 interface DocsLayoutProps {
   children: ComponentChildren;

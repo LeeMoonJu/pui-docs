@@ -59,6 +59,46 @@ npm run build
 npm run preview
 ```
 
+### 배포
+
+#### 정적 호스팅 (GitHub Pages, Netlify, Vercel 등)
+
+1. 빌드 실행:
+
+```bash
+npm run build
+```
+
+2. `dist` 폴더를 배포 서버에 업로드하거나, CI/CD 파이프라인에서 자동 배포 설정
+
+#### 서브 디렉토리 배포
+
+서브 디렉토리(예: `/pui-docs/`)에 배포하는 경우, `vite.config.ts`의 `base` 값을 수정하세요:
+
+```typescript
+export default defineConfig({
+  base: '/pui-docs/', // 서브 디렉토리 경로로 변경
+  // ...
+});
+```
+
+그 후 다시 빌드:
+
+```bash
+npm run build
+```
+
+#### 로컬 미리보기
+
+배포 전 로컬에서 빌드 결과를 미리보기:
+
+```bash
+npm run build
+npm run preview
+```
+
+브라우저에서 `http://localhost:4173`으로 접속하여 확인할 수 있습니다.
+
 ### 프로젝트 구조
 
 - `src/app.tsx`: 좌측 메뉴 선택에 따라 페이지를 스왑하는 엔트리(라우터 없이 동작)
