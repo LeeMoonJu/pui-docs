@@ -8,12 +8,14 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@skybaer0804/pui": "file:../pui",
         "@tabler/icons-react": "^3.36.0"
     },
     "devDependencies": {
         "@preact/preset-vite": "^2.10.2",
         "@types/node": "^20.10.0",
         "preact": "^10.28.0",
+        "sass-embedded": "^1.97.0",
         "typescript": "^5.3.3",
         "vite": "^7.3.0",
         "vite-plugin-pwa": "^1.2.0"

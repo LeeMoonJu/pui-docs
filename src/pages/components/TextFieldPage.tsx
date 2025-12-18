@@ -10,7 +10,7 @@ export function TextFieldPage() {
     >
       <Stack spacing="md">
         <TextField label="기본 TextField" placeholder="입력하세요" />
-        <TextField label="Required" placeholder="필수 입력" required />
+        <TextField label="Required" placeholder="필수 입력" />
         <TextField label="Error" placeholder="에러 상태" error helperText="에러 메시지" />
         <TextField label="Disabled" placeholder="비활성화" disabled />
       </Stack>

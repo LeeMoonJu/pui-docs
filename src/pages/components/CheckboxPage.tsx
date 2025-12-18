@@ -12,15 +12,9 @@ export function CheckboxPage() {
       description="Checkbox 컴포넌트는 선택 옵션을 표시하는 데 사용됩니다."
     >
       <Stack spacing="md">
-        <Checkbox checked={checked} onChange={(e) => setChecked(e.currentTarget.checked)}>
-          기본 Checkbox
-        </Checkbox>
-        <Checkbox checked disabled>
-          Disabled Checkbox
-        </Checkbox>
-        <Checkbox indeterminate>
-          Indeterminate Checkbox
-        </Checkbox>
+        <Checkbox checked={checked} onChange={(next) => setChecked(next)} label="기본 Checkbox" />
+        <Checkbox checked disabled label="Disabled Checkbox" />
+        <Checkbox indeterminate label="Indeterminate Checkbox" />
       </Stack>
     </ComponentPage>
   );

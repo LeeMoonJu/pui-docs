@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import { ThemeProvider } from '@skybaer0804/pui';
-import '@skybaer0804/pui/styles';
+import '@skybaer0804/pui/styles.css';
 import { App } from './app';
 import './index.css';
 

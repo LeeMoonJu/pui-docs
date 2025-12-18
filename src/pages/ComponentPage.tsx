@@ -16,7 +16,7 @@ export function ComponentPage({ title, description, children }: ComponentPagePro
       {description && (
         <>
           <Box margin="md" />
-          <Typography variant="body1">{description}</Typography>
+          <Typography variant="body-medium">{description}</Typography>
         </>
       )}
       <Box margin="lg" />
@@ -24,11 +24,8 @@ export function ComponentPage({ title, description, children }: ComponentPagePro
         <CardHeader>
           <Typography variant="h2">예제</Typography>
         </CardHeader>
-        <CardBody>
-          {children}
-        </CardBody>
+        <CardBody>{children}</CardBody>
       </Card>
     </Box>
   );
 }
-

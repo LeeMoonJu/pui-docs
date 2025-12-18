@@ -11,11 +11,11 @@ export function TablePage() {
       <Stack spacing="md">
         <Table
           columns={[
-            { key: 'name', label: '이름' },
-            { key: 'age', label: '나이' },
-            { key: 'city', label: '도시' },
+            { key: 'name', header: '이름' },
+            { key: 'age', header: '나이' },
+            { key: 'city', header: '도시' },
           ]}
-          data={[
+          rows={[
             { name: '홍길동', age: 30, city: '서울' },
             { name: '김철수', age: 25, city: '부산' },
             { name: '이영희', age: 28, city: '대구' },

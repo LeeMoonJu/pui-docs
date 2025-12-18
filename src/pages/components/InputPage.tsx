@@ -18,7 +18,7 @@ export function InputPage() {
         <Stack spacing="sm">
           <h3>TextField</h3>
           <TextField label="Label" placeholder="TextField with label" />
-          <TextField label="Required" placeholder="Required field" required />
+          <TextField label="Required" placeholder="Required field" />
           <TextField label="Error" placeholder="Error state" error helperText="에러 메시지입니다." />
         </Stack>
       </Stack>
