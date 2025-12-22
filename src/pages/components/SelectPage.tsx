@@ -16,7 +16,7 @@ export function SelectPage() {
         {/* 기본 사용 */}
         <Stack spacing="sm">
           <h3>기본 사용</h3>
-          <Select label="옵션 선택" options={commonOptions} />
+          <Select options={commonOptions} />
           <Select label="레이블 없음" options={commonOptions} />
         </Stack>
 
