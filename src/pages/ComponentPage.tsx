@@ -2,6 +2,7 @@ import { ComponentChildren } from 'preact';
 import { Box } from '@skybaer0804/pui/Layout';
 import { Typography } from '@skybaer0804/pui/Typography';
 import { Card, CardHeader, CardBody } from '@skybaer0804/pui/Card';
+import { ContentLayout } from '../components/PageLayout/ContentLayout';
 
 interface ComponentPageProps {
   title: string;
@@ -11,8 +12,7 @@ interface ComponentPageProps {
 
 export function ComponentPage({ title, description, children }: ComponentPageProps) {
   return (
-    <Box padding="lg">
-      <Typography variant="h1">{title}</Typography>
+    <ContentLayout title={title}>
       {description && (
         <>
           <Box margin="md" />
@@ -22,10 +22,10 @@ export function ComponentPage({ title, description, children }: ComponentPagePro
       <Box margin="lg" />
       <Card>
         <CardHeader>
-          <Typography variant="h2">예제</Typography>
+          <Typography variant="h3">예제</Typography>
         </CardHeader>
         <CardBody>{children}</CardBody>
       </Card>
-    </Box>
+    </ContentLayout>
   );
 }
